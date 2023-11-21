@@ -15,14 +15,10 @@ int main() {
 		if (pipe(filedes) == -1) {
 				printf("fail to call pipe()\n");
 				exit(1);
-		}
-
-		if((pid = fork()) == -1) {
+		} if ((pid = fork()) == -1) {
 				printf("fail to call fork()\n");
 				exit(1);
-		}
-		
-		else if (pid > 0) {
+		} else if (pid > 0) {
 				for(i = 0 ; i < 3 ; i++){
 						strcpy(buffer, msg[i]);
 						write(filedes[1], buffer, SIZE);

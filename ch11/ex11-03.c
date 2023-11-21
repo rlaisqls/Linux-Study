@@ -12,24 +12,20 @@ int main(){
 
 	pid_t pid;
 
-	if(pipe(filedes) == -1){
+	if (pipe(filedes) == -1){
 		printf("fail to call pipe()\n");
 		exit(1);
 	}
 
-	if((pid = fork()) == -1) {
+	if ((pid = fork()) == -1) {
 		printf("fail to call fork()\n");
 		exit(1);
-	}
-	
-	else if(pid > 0) {
+	} else if(pid > 0) {
 		close(filedes[1]);
 		strcpy(msg, "apple is red.\n");
 		write(filedes[1], msg, SIZE);
 		printf("[parent] %s\n", msg);
-	}
-
-	else {
+	} else {
 		close(filedes[0]);
 		fork();
 		sleep(1);
