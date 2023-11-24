@@ -5,10 +5,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-// 3개의 자식 프로세스를 생성
-// 부모 프로세스가 3개의 자식 프로세스와 연결되어 (select)
-// 자식 프로세스들이 보내는 데이터를 받는 프로그램
-
 #define MSGSIZE 16
 
 // void parent(int [][]);
@@ -42,8 +38,8 @@ int main() {
 			onerror("fail to call fork() #2\n");
 
 	if(pid1 > 0 && pid2 > 0)
-			if((pid3 = fork()) == -1)
-					onerror("fail to call fork() #3\n");
+		if((pid3 = fork()) == -1)
+			onerror("fail to call fork() #3\n");
 
 	if(pid1 > 0 && pid2 > 0 && pid3 > 0) {
 		printf("parent: %d\n", getpid());
