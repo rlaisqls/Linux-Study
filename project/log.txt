@@ -21,31 +21,3 @@ SwBlock3        5             2023-12-08 11:35:51    Signal(Terminated: 15)
 SwBlock1        6             2023-12-08 11:35:54    Signal(Terminated: 15)
 SwBlock2        6             2023-12-08 11:35:54    Signal(Terminated: 15)
 SwBlock3        6             2023-12-08 11:35:54    Signal(Terminated: 15)
-SW Block Name | Restart cnt | Start Time           | Reason
-========================================================================================
-SwBlock1        0             2023-12-08 11:38:23    Init
-SwBlock2        0             2023-12-08 11:38:23    Init
-SwBlock3        0             2023-12-08 11:38:23    Init
-SwBlock1        1             2023-12-08 11:38:26    Signal(Terminated: 15)
-SwBlock3        1             2023-12-08 11:38:26    Signal(Terminated: 15)
-SwBlock2        1             2023-12-08 11:38:26    Signal(Terminated: 15)
-SwBlock3        2             2023-12-08 11:38:29    Signal(Terminated: 15)
-SwBlock2        2             2023-12-08 11:38:29    Signal(Terminated: 15)
-SwBlock1        2             2023-12-08 11:38:29    Signal(Terminated: 15)
-SwBlock1        3             2023-12-08 11:38:32    Signal(Terminated: 15)
-SwBlock2        3             2023-12-08 11:38:32    Signal(Terminated: 15)
-SwBlock3        3             2023-12-08 11:38:32    Signal(Terminated: 15)
-SwBlock1        4             2023-12-08 11:38:35    Signal(Terminated: 15)
-SwBlock3        4             2023-12-08 11:38:35    Signal(Terminated: 15)
-SwBlock2        4             2023-12-08 11:38:35    Signal(Terminated: 15)
-SW Block Name | Restart cnt | Start Time           | Reason
-========================================================================================
-SwBlock1        0             2023-12-08 11:39:48    Init
-SwBlock2        0             2023-12-08 11:39:48    Init
-SwBlock3        0             2023-12-08 11:39:48    Init
-SwBlock2        1             2023-12-08 11:39:51    Signal(Terminated: 15)
-SwBlock3        1             2023-12-08 11:39:51    Signal(Terminated: 15)
-SwBlock1        1             2023-12-08 11:39:51    Signal(Terminated: 15)
-SwBlock2        2             2023-12-08 11:39:54    Signal(Terminated: 15)
-SwBlock1        2             2023-12-08 11:39:54    Signal(Terminated: 15)
-SwBlock3        2             2023-12-08 11:39:54    Signal(Terminated: 15)
