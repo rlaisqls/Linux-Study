@@ -48,9 +48,14 @@ void runSwBlock(SwBlock *block) {
     pid_t pid = fork();
 
     if (pid == 0) {
-        sleep(3);
-        kill(getpid(), SIGTERM);
-        // exit(0);
+        srand(time(NULL));
+        sleep(rand() % 5);
+
+        if ((rand() % 2) == 0) {
+            kill(getpid(), SIGTERM);
+        } else {
+            exit(0);
+        }
     } else {
         printLog(block);
         block->pid = pid;
@@ -147,6 +152,7 @@ int main() {
     initSigaction();
     for (int i = 0; i < swBlockCount; i++) {
         runSwBlock(&blocks[i]);
+        sleep(1);
     }
 
     while (1) sleep(1);
